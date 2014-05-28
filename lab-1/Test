@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public abstract class TrippleClassTest {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int die;
+		int Throw;
+		int i = 0;
+
+		while (i <= 5) {
+			try {
+				i++;
+				System.out.println("please enter how many dices to use");
+				die = input.nextInt();
+				// System.out.println("how many throws did you want");
+				// Throw = input.nextInt();
+				Dice tripple = new Dice(die);
+				tripple.Throw(die);
+				// System.out.println(tripple);
+			} catch (Exception e) {
+				System.err.printf("Error caught");
+			}
+		}
+	}
+}
