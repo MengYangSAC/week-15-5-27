@@ -39,3 +39,5 @@ public class Dice implements Runnable {
 	}
 
 }
+
+// Good job, Matt.   Gice the array a try when you have a chance.
